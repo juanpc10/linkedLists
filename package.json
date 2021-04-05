@@ -1,0 +1,39 @@
+{
+  "name": "codeworks-data-structures-2-exercise",
+  "version": "1.0.9",
+  "description": "A Codeworks exercise to train students",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "codeworks/data-structures-2-exercise"
+  },
+  "author": "Codeworks",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cz-changelog": "^1.0.1",
+    "del": "^4.1.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-json": "^1.4.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^5.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-replace": "^1.0.0",
+    "husky": "^2.3.0",
+    "mocha": "^6.1.4",
+    "stylelint": "^10.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "gulp lint"
+    }
+  }
+}
